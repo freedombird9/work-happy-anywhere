@@ -1,6 +1,6 @@
-## work-happy-anywhere
+# work-happy-anywhere
 
-### set_envs.sh
+## set_envs.sh
 
 Command **"set_envs.sh app.yaml"** will read the environment variables under key "env_variables" from file app.yaml. This is the config file format for GCS (Google Cloud Service). An example app.yaml looks like:
 
@@ -12,19 +12,19 @@ api_version: 1 <br/>
 // other config settings
 
 env_variables: <br/>
- DJANGO_SETTINGS_MODULE: 'base.settings' <br/>
- GAE_SQL_HOST: '/cloudsql/:dbname' <br/>
- GAE_SQL_DBNAME: 'dbname' <br/>
- LOCAL_SQL_HOST: 'host_ip_address' <br/>
- LOCAL_SQL_DBNAME: 'dbname' <br/>
- DEBUG: 'off' <br/>
- TEMPLATE_DEBUG: 'off' <br/>
- ALLOWED_HOSTS: '*' <br/>
- GCM_PUSH_API_KEY: 'key'
+.DJANGO_SETTINGS_MODULE: 'base.settings' <br/>
+.GAE_SQL_HOST: '/cloudsql/:dbname' <br/>
+.GAE_SQL_DBNAME: 'dbname' <br/>
+.LOCAL_SQL_HOST: 'host_ip_address' <br/>
+.LOCAL_SQL_DBNAME: 'dbname' <br/>
+.DEBUG: 'off' <br/>
+.TEMPLATE_DEBUG: 'off' <br/>
+.ALLOWED_HOSTS: '*' <br/>
+.GCM_PUSH_API_KEY: 'key'
 
 It reads all the env_variables and exports them to your current terminal, so that you can run the app locally to debug.
 
- #### Usage
+### Usage
 
 It only supports bash 4. To install bash 4 on Mac:
 
