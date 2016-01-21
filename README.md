@@ -2,14 +2,14 @@
 
 ### set_envs.sh
 
-**set_envs.sh app.yaml** will read the environment variables under key "env_variables" from file app.yaml. This is the config file format for GCS (Google Cloud Service). An example app.yaml looks like:
+Command **"set_envs.sh app.yaml"** will read the environment variables under key "env_variables" from file app.yaml. This is the config file format for GCS (Google Cloud Service). An example app.yaml looks like:
 
 application: project-id
 version: 1
 runtime: python27
 api_version: 1
 
-# other config settings
+// other config settings
 
 env_variables:
  DJANGO_SETTINGS_MODULE: 'base.settings'
