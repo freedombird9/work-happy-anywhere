@@ -30,8 +30,8 @@ It reads all the env_variables and exports them to your current terminal, so tha
 
 It only supports bash 4. To install bash 4 on Mac:
 
-```
-# Homebrew installs the new bash under /usr/local/bin/bash
+```bash
+#Homebrew installs the new bash under /usr/local/bin/bash
 brew update && brew install bash
 ```
 
