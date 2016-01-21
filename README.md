@@ -4,22 +4,22 @@
 
 Command **"set_envs.sh app.yaml"** will read the environment variables under key "env_variables" from file app.yaml. This is the config file format for GCS (Google Cloud Service). An example app.yaml looks like:
 
-application: project-id
-version: 1
-runtime: python27
-api_version: 1
+application: project-id <br/>
+version: 1 <br/>
+runtime: python27 <br/>
+api_version: 1 <br/>
 
 // other config settings
 
-env_variables:
- DJANGO_SETTINGS_MODULE: 'base.settings'
- GAE_SQL_HOST: '/cloudsql/:dbname'
- GAE_SQL_DBNAME: 'dbname'
- LOCAL_SQL_HOST: 'host_ip_address'
- LOCAL_SQL_DBNAME: 'dbname'
- DEBUG: 'off'
- TEMPLATE_DEBUG: 'off'
- ALLOWED_HOSTS: '*'
+env_variables: <br/>
+ DJANGO_SETTINGS_MODULE: 'base.settings' <br/>
+ GAE_SQL_HOST: '/cloudsql/:dbname' <br/>
+ GAE_SQL_DBNAME: 'dbname' <br/>
+ LOCAL_SQL_HOST: 'host_ip_address' <br/>
+ LOCAL_SQL_DBNAME: 'dbname' <br/>
+ DEBUG: 'off' <br/>
+ TEMPLATE_DEBUG: 'off' <br/>
+ ALLOWED_HOSTS: '*' <br/>
  GCM_PUSH_API_KEY: 'key'
 
 It reads all the env_variables and exports them to your current terminal, so that you can run the app locally to debug.
@@ -28,11 +28,11 @@ It reads all the env_variables and exports them to your current terminal, so tha
 
 It only supports bash 4. To install bash 4 on Mac:
 
-# Homebrew installs the new bash under /usr/local/bin/bash
+// Homebrew installs the new bash under /usr/local/bin/bash <br/>
 brew update && brew install bash
 
-sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
-# Change to the new shell
+sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells' <br/>
+// Change to the new shell <br/>
 chsh -s /usr/local/bin/bash
 
 Now close your current terminal and start a new one. Run "bash --version", you should see version 4.X.X
