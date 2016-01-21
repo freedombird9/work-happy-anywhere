@@ -7,7 +7,7 @@ Command **`set_envs.sh app.yaml`** will read the environment variables under key
 ```yaml
 application: project-id
 version: 1
-runtime: python27
+runtime: python27 
 api_version: 1
 
 // other config settings
@@ -51,6 +51,6 @@ The shell script relies on a python program to parse the yaml file. You need thi
 pip install pyyaml
 ```
 
-Then you're ready to go. Remember to execute it with `set_envs.sh /path/to/yamlfile` or `source set_envs.sh /path/to/yamlfile`.
+Then you're ready to go. Remember to execute it with `. set_envs.sh /path/to/yamlfile` or `source set_envs.sh /path/to/yamlfile`.
 
 If you run it directly, the environment variables won't be exported to your current working shell, rather, they'll be exported to a sub-shell and be gone.
