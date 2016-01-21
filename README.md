@@ -10,7 +10,7 @@ version: 1
 runtime: python27 
 api_version: 1
 
-// other config settings
+#other config settings
 
 env_variables:
  DJANGO_SETTINGS_MODULE: 'base.settings'
