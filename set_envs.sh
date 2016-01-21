@@ -5,7 +5,7 @@ if [ $# -lt 1 ]; then
     exit
 fi
 
-my_dir=$(dirname "$BASH_SOURCE")
+my_dir=$(dirname "${BASH_SOURCE[0]}")
 
 echo $my_dir
 declare -A items=()
