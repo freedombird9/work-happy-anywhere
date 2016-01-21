@@ -2,7 +2,7 @@
 
 ## set_envs.sh
 
-Command **`set_envs.sh app.yaml`** will read the environment variables under key `env_variables` from file app.yaml. This is the config file format for GCS (Google Cloud Service). An example app.yaml looks like:
+Command **`set_envs.sh app.yaml`** will read the environment variables under key `env_variables` from file `app.yaml`. This is the config file format for GCS (Google Cloud Service). An example `app.yaml` looks like:
 
 ```yaml
 application: project-id
@@ -51,4 +51,6 @@ The shell script relies on a python program to parse the yaml file. You need thi
 pip install pyyaml
 ```
 
-Then you're ready to go. Remember to execute it with `set_envs.sh /path/to/yamlfile` or `source set_envs.sh /path/to/yamlfile`. If you run it directly, the environment variables won't be exported to your current working shell, rather, they'll be exported to a sub-shell and be gone.
+Then you're ready to go. Remember to execute it with `set_envs.sh /path/to/yamlfile` or `source set_envs.sh /path/to/yamlfile`.
+
+If you run it directly, the environment variables won't be exported to your current working shell, rather, they'll be exported to a sub-shell and be gone.
