@@ -12,15 +12,15 @@ api_version: 1 <br/>
 // other config settings
 
 env_variables: <br/>
-.DJANGO_SETTINGS_MODULE: 'base.settings' <br/>
-.GAE_SQL_HOST: '/cloudsql/:dbname' <br/>
-.GAE_SQL_DBNAME: 'dbname' <br/>
-.LOCAL_SQL_HOST: 'host_ip_address' <br/>
-.LOCAL_SQL_DBNAME: 'dbname' <br/>
-.DEBUG: 'off' <br/>
-.TEMPLATE_DEBUG: 'off' <br/>
-.ALLOWED_HOSTS: '*' <br/>
-.GCM_PUSH_API_KEY: 'key'
+ DJANGO_SETTINGS_MODULE: 'base.settings' <br/>
+ GAE_SQL_HOST: '/cloudsql/:dbname' <br/>
+ GAE_SQL_DBNAME: 'dbname' <br/>
+ LOCAL_SQL_HOST: 'host_ip_address' <br/>
+ LOCAL_SQL_DBNAME: 'dbname' <br/>
+ DEBUG: 'off' <br/>
+ TEMPLATE_DEBUG: 'off' <br/>
+ ALLOWED_HOSTS: '*' <br/>
+ GCM_PUSH_API_KEY: 'key'
 
 It reads all the env_variables and exports them to your current terminal, so that you can run the app locally to debug.
 
