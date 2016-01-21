@@ -10,5 +10,5 @@ if __name__ == '__main__':
                 errors = 1
                 continue
             sys.stdout.write('%s\0%s\0' % (k, v))
-    sys.exit(saw_errors)
+    sys.exit(errors)
 

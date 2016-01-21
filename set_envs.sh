@@ -5,10 +5,13 @@ if [ $# -lt 1 ]; then
     exit
 fi
 
+my_dir=$(dirname "$BASH_SOURCE")
+
+echo $my_dir
 declare -A items=()
 while IFS= read -r -d '' key && IFS= read -r -d '' value; do
     items[$key]=$value
-done < <(python read_yaml.py $1)
+done < <(python $my_dir/read_yaml.py $1)
 
 for i in "${!items[@]}"
 do
