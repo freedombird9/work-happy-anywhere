@@ -22,7 +22,7 @@ env_variables:
  ALLOWED_HOSTS: '*'
  GCM_PUSH_API_KEY: 'key'
 
- It reads all the env_variables and exports them to your current terminal, so that you can run the app locally to debug.
+It reads all the env_variables and exports them to your current terminal, so that you can run the app locally to debug.
 
  #### Usage
 
