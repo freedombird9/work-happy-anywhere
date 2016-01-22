@@ -7,7 +7,6 @@ fi
 
 my_dir=$(dirname "${BASH_SOURCE[0]}")
 
-echo $my_dir
 declare -A items=()
 while IFS= read -r -d '' key && IFS= read -r -d '' value; do
     items[$key]=$value
